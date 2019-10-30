@@ -35,6 +35,23 @@
         width: 40%;
         float: right;
     }
+    .content h3 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .content p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+        .content p > a {
+            color: red;
+            text-decoration: none;
+        }
 
 
 /***********************
