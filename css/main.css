@@ -70,12 +70,19 @@
         border-bottom: 1px solid #fff;
     }
         .footer > .socials > a {
+            display: inline-block;
+            width: 40px;
             padding: 10px;
             color: #fff;
             font-size: 20px;
             line-height: 20px;
             text-decoration: none;
         }
+            .footer > .socials > a:hover {
+                background-color: #fff;
+                color: #03A9F4;
+                border-radius: 50%;
+            }
     .footer > .footer-content {
         display: inline-block;
         width: 600px;
