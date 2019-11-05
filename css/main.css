@@ -39,14 +39,14 @@
     .hero > p {
         display: inline-block;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         font-size: 23px;
         line-height: 28px;
     }
     .hero > .clock {
         display: inline-block;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .hero > form {
         display: inline-block;
@@ -66,6 +66,18 @@
         display: inline-block;
     }
 
+@media (max-width: 700px) {
+    .hero {
+        width: 100%;
+        margin: 60px 0 30px;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 550px) {
+    .clock > .time {
+        width: 50%;
+    }
+}
 
 /***********************
  * MAIN CONTENT
@@ -106,6 +118,47 @@
         float: right;
     }
 
+@media (max-width: 1200px) {
+    .content {
+        width: 900px;
+        margin: 60px calc( (100% - 900px) / 2 );
+    }
+}
+@media (max-width: 1000px) {
+    .content {
+        width: 700px;
+        margin: 60px calc( (100% - 700px) / 2 );
+    }
+        .two-in-row {
+            width: 100%;
+        }
+        .two-in-row:last-of-type {
+            margin-left: 0;
+        }
+}
+@media (max-width: 800px) {
+    .content {
+        width: 500px;
+        margin: 60px calc( (100% - 500px) / 2 );
+    }
+        .content > .left {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .content > .right {
+            width: 100%;
+        }
+    .footer > .btn {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+        margin: 60px 0;
+        padding: 0 20px;
+    }
+}
 
 /***********************
  * FOOTER
@@ -179,3 +232,36 @@
             display: inline-block;
             width: 100%;
         }
+
+@media (max-width: 1200px) {
+    .footer {
+        width: 900px;
+        margin: 30px calc( (100% - 900px) / 2 );
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        width: 700px;
+        margin: 30px calc( (100% - 700px) / 2 );
+    }
+}
+@media (max-width: 800px) {
+    .footer {
+        width: 500px;
+        margin: 30px calc( (100% - 500px) / 2 );
+    }
+}
+@media (max-width: 700px) {
+    .footer > .footer-content {
+        width: 100%;
+        margin: 30px 0 0;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 20px;
+    }
+}
